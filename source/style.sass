@@ -13,7 +13,7 @@ body
 
     #inner
         background-color: #000000
-        overflow: hidden
+        overflow-x: hidden
         display: block
         color: white
         height: 13em
@@ -29,3 +29,33 @@ body
         padding: 0.95em
         box-sizing: border-box
         margin-top: 1em
+    
+section#bandDisplay
+    position: relative
+    height: 100%
+    width: 100%
+    
+    .hour, .minute
+        display: block
+        position: absolute
+        font-family: 'Dosis', 'Roboto', sans-serif, monospace
+        font-size: 3.5em
+        width: 100%
+        text-align: center
+    
+    .minute
+        top: 1.5em
+        z-index: 2
+        background: -webkit-linear-gradient(#fffb00 15%,#15ff00 35%, #00ffbf 80%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    
+    .hour
+        top: 0.8em
+        z-index: 3
+        background: -webkit-linear-gradient(#fffb00 15%,#ff7300 35%, #ff0062 80%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+::-webkit-scrollbar 
+    display: none
