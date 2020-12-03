@@ -4,7 +4,8 @@
   "description": "A concept UI mocked up using the Internetz technologies",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "npx webpack serve --config webpack.config.js --progress --profile --watch --content-base source/",
+    "build": "npx webpack"
   },
   "keywords": [
     "typescript",
